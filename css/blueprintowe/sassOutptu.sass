@@ -1,0 +1,104 @@
+html, body, div, p, a, fieldset, form
+  margin: 0
+  padding: 0
+  border: 0
+  font-weight: inherit
+  font-style: inherit
+  font-size: 100%
+  font-family: inherit
+  vertical-align: baseline
+
+
+body
+  line-height: 1.5
+
+
+html
+  font-size: 100.01%
+
+
+body
+  font-size: 75%
+  color: #222
+  background: #fff
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif
+
+
+h3
+  font-weight: normal
+  color: #111
+  font-size: 1.5em
+  line-height: 1
+  margin-bottom: 1em
+
+
+p
+  margin: 0 0 1.5em
+
+
+a
+  color: #009
+  text-decoration: underline
+
+  &:focus, &:hover
+    color: #000
+
+
+fieldset
+  padding: 1.4em
+  margin: 0 0 1.5em 0
+  border: 1px solid #ccc
+
+
+input[type=text]
+  background-color: #fff
+  border: 1px solid #bbb
+  margin: 0.5em 0
+
+  &:focus
+    border-color: #666
+
+
+.container
+  width: 1030px
+  margin: 0 auto
+
+
+.column, div.span-1
+  float: left
+  margin-right: 10px
+
+
+.span-1
+  width: 250px
+
+
+.append-1
+  padding-right: 260px
+
+
+.box
+  padding: 1.5em
+  margin-bottom: 1.5em
+  background: #E5ECF9
+
+
+.container
+  display: block
+
+  &:after
+    content: "\0020"
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+    overflow: hidden
+
+
+p + p
+  text-indent: 2em
+  margin-top: -1.5em
+
+
+form p + p
+  text-indent: 0

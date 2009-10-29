@@ -1,148 +1,115 @@
-/* http://www.colourlovers.com/palette/845780/No_idea */
-html 
-{
-	/* http://www.hicksdesign.co.uk/journal/forcing-scrollbars-now-even-better */
-	height: 100%;
-	margin-bottom: 1px;
-	background-color: #AFEEEE;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: 30px;
-}
-
-.site 
-{
-	background-color: White;
-
-}
-
-.title 
-{
+/*http://www.colourlovers.com/palette/845780/No_idea*/
+html { 
+   /*   http://www.hicksdesign.co.uk/journal/forcing-scrollbars-now-even-better */
+   height : 100%; 
+   margin-bottom : 1px; 
+   background-color : #7DD8DF; 
+   margin : 0 auto 0 44px;    
+ } 
+.site { 
+   background-color : white; 
+ } 
+.title {
 	position: relative;
-	padding-top: 18px;
-	padding-right: 0;
-	padding-bottom: 0;
-	padding-left: 0;
-	background-color: #FEFEEB;
-}
-
-.title a 
-{
- position: absolute;
- text-decoration: none;
- font-size: 100%;
- font-weight: bold;
- font-style: italic;
- color: #FF2C2B;
- top: 20px;
- right: 0;
-}
-
-#home, #post 
-{
+	padding: 0 0 0 0;
+	background-color: #FFFFA4;
+	border-bottom: thin inset Black;
+}  
+.title a { 
+   position : absolute; 
+   text-decoration : none; 
+   font-size : 100%; 
+   font-weight : bold; 
+   color : #389E45; 
+   top : 1px; 
+   right : 0; 
+ } 
+#home, #post {
 	padding-top: 22px;
-	border-color: #888;
-	border-style: double;
-	border-top-width: 3px;
-	border-bottom-width: 1px;
-	width: 870px;
-}
+	border: solid #888;
+	border: 1px;
+} 
+#home h1 { 
+   font-size : 140%; 
+   font-style : italic; 
+ } 
+#post h1 { 
+   font-size : 180%; 
+   font-style : italic; 
+   font-weight : bold; 
+   margin-bottom : 22px; 
+   color : #FF2C2B; 
+ } 
+#post h2, #post h3, #home h1 { 
+   color : #489690; 
+ } 
+#home ul li { 
+   list-style : none; 
+ } 
+a[href^="http:"], a[href^="mailto:"], a[href^="http:"]:visited, a[href$=".pdf"], a[href$=".doc"], a[href$=".xls"], a[href$=".rss"], a[href$=".rdf"], a[href^="aim:"] { 
+   padding : 2px 16px 2px 0; 
+ } 
+blockquote { 
+   font-size : 90%; 
+   font-family : "DejaVu Sans", sans-serif; 
+   font-style : normal; 
+   width : 253px; 
+   margin-top : 6px; 
+   margin-left : 572px; 
+   padding : 18px 22px 0 22px; 
+   position : absolute; 
+   background : #F2F1D6; 
+   -moz-border-radius : 4px; 
+   color : #800; 
+ } 
+blockquote img { 
+   margin : 0 auto 12px auto; 
+   display : block; 
+ } 
+blockquote p.author { 
+   margin-top : -1em; 
+   padding-right : 44px; 
+   color : #800; 
+   font-style : italic; 
+   text-align : right; 
+ } 
+h2 { 
+   font-size : 140%; 
+   padding-bottom : 2px; 
+   border-bottom : 2px dotted #489690; 
+ } 
+h2, h3 { 
+   color : #489690; 
+ } 
+code { 
+   margin : 0 2px; 
+   padding : 0.06em 0.125em; 
+   border : 1px solid #403B33; 
+ } 
+pre code { 
+   border : none; 
+ } 
+pre {
+	border-left: 9px double #FF8000;
+	margin-left: 0px;
+	padding: 0 0 0 49px;
+} 
+/*tabele*/
+caption { 
+   text-align : right; 
+ } 
+li ul { 
+   margin-bottom : 1.5em; 
+ } 
+.footer { 
+   clear : both; 
+   background-color : #fff; 
+   border : 1px solid #aaa; 
+   text-align : center; 
+   font-size : 12px; 
+   padding-top : 1px; 
+   padding-bottom : 1px; 
+ }
+  
 
-#home h1 
-{
- font-size: 140%;
- font-style: italic;
-}
-
-#post h1 
-{
-	font-size: 180%;
-	font-style: italic;
-	font-weight: bold;
-	margin-bottom: 22px;
-	color: #1E7D2F;
-}
-
-#post h2, #post h3, #home h1 
-{
- color: #489690;
-}
-
-#home ul li 
-{
- list-style: none;
-}
-
-a[href^="http:"], a[href^="mailto:"], a[href^="http:"]:visited, a[href$=".pdf"], a[href$=".doc"], a[href$=".xls"], a[href$=".rss"], a[href$=".rdf"], a[href^="aim:"] 
-{
- padding-top: 2px;
- padding-right: 16px;
- padding-bottom: 2px;
- padding-left: 0;
-}
-
-h2 
-{
- font-size: 140%;
- padding-bottom: 2px;
- border-bottom-color: #489690;
- border-bottom-width: 2px;
- border-bottom-style: dotted;
-}
-
-h2, h3 
-{
- color: #489690;
-}
-
-code 
-{
- margin-top: 0;
- margin-right: 2px;
- margin-bottom: 0;
- margin-left: 2px;
- padding-top: 0.06em;
- padding-right: 0.125em;
- padding-bottom: 0.06em;
- padding-left: 0.125em;
- border-color: #403B33;
- border-width: 1px;
- border-style: solid;
-}
-
-pre code 
-{
- border-style: none;
-}
-
-pre 
-{
- border-left-color: #FD9945;
- border-left-width: 9px;
- border-left-style: solid;
- margin-left: -49px;
- padding-top: 0;
- padding-right: 0;
- padding-bottom: 0;
- padding-left: 49px;
-}
-
-/* tabele */
-caption 
-{
- text-align: right;
-}
-
-li ul 
-{
- margin-bottom: 1.5em;
-}
-
-foot
-{
-	padding-top: 2px;
-	border-top-color: #489690;
-	border-top-width: 2px;
-	border-top-style: dotted;
-	text-align: center;
-}
+ 

@@ -1,0 +1,44 @@
+/* -----------------------------------------------------------------------
+
+
+ Blueprint CSS Framework 0.9
+ http://blueprintcss.org
+
+   * Copyright (c) 2007-Present. See LICENSE for more info.
+   * See README for instructions on how to use Blueprint.
+   * For credits and origins, see AUTHORS.
+   * This is a compressed file. See the sources in the 'src' directory.
+
+----------------------------------------------------------------------- */
+
+/* reset.css */
+html, body, div, p, a, fieldset, form {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {line-height:1.5;}
+
+/* typography.css */
+html {font-size:100.01%;}
+body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
+h3 {font-weight:normal;color:#111;}
+h3 {font-size:1.5em;line-height:1;margin-bottom:1em;}
+p {margin:0 0 1.5em;}
+a:focus, a:hover {color:#000;}
+a {color:#009;text-decoration:underline;}
+
+/* forms.css */
+fieldset {padding:1.4em;margin:0 0 1.5em 0;border:1px solid #ccc;}
+input[type=text] {background-color:#fff;border:1px solid #bbb;}
+input[type=text]:focus {border-color:#666;}
+input[type=text] {margin:0.5em 0;}
+
+/* grid.css */
+.container {width:1030px;margin:0 auto;}
+.column, div.span-1 {float:left;margin-right:10px;}
+.span-1 {width:250px;}
+.append-1 {padding-right:260px;}
+.box {padding:1.5em;margin-bottom:1.5em;background:#E5ECF9;}
+.container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.container {display:block;}
+
+/* fancy-type */
+p + p {text-indent:2em;margin-top:-1.5em;}
+form p + p {text-indent:0;}

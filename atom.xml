@@ -4,11 +4,11 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Marian</title>
- <link href="http://sigma.ug.edu.pl/~msmolins/rails3/atom.xml" rel="self"/>
+ <title>NoTaTkI</title>
+ <link href="http://sigma.ug.edu.pl/~msmolins/atom.xml" rel="self"/>
  <link href="http://sigma.ug.edu.pl/~msmolins/rails3/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>sigma.ug.edu.pl/~msmolins/rails3/</id>
+ <id>http://sigma.ug.edu.pl/~msmolins/rails3/</id>
  <author>
    <name>Marian</name>
    <email>msmolins@sigma.ug.edu.pl</email>
@@ -19,7 +19,7 @@ layout: nil
    <title>{{ post.title }}</title>
    <link href="http://inf.ug.edu.pl/~wbzyl/{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>sigma.ug.edu.pl/~msmolins/rails3/{{ post.id }}</id>
+   <id>http://sigma.ug.edu.pl/~msmolins/rails3/{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

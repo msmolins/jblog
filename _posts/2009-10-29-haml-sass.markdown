@@ -1,0 +1,194 @@
+---
+layout: post
+title: Haml-Sass
+---
+
+<blockquote>
+<p>
+"Kobieta informatyk w spódnicy różni się od kobiety informatyka w spodniach czasem dostępu"
+</p>
+
+</blockquote>
+
+# {{ page.title }}
+
+## Krótko Haml i  Sass
+
+Haml (XHTML Abstraction Markup Language) jest językiem znaczników używanym do prostego i przejrzystego opisywania XHTML. Został stworzony, aby obejść wiele niedoskonałości tradycyjnych systemów szablonów używając zarazem eleganckiej składni. Głównym zadaniem Hamla jest zastąpienie dotychczasowych systemów szablonów, jak PHP, RHTML czy ASP.
+
+Sass jest meta-językiem na podobieństwo CSS, lecz jest bardziej rozbudowany. Sass wprowadza prostszą i bardziej przejjrzystą składnię niż CSS i implementuje wiele różnorodnych cech przydatnych do budowy arkusza stylów.
+
+## Wyniki pracy Hamla
+
+<a href="http://sigma.ug.edu.pl/~msmolins/rails3/przykladBlueprintowejStrony.html">Owa stronka</a> to efekt pracy blueprinta, po zhamlowaniu jej otrzymuje się taki oto kod
+
+<div class="highlight">
+<pre>
+!!! Strict
+%html{ "xml:lang" => "pl", :lang => "pl-pl", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "content-type" }
+    %title
+      blueprint presents
+    %meta{ :name => "author", :content => "Marian" }
+    %link{ :href => "http://sigma.ug.edu.pl/~msmolins/public_html/rails3/atom.xml", :title => "Marian", :rel => "alternate", :type => "application/atom+xml" }
+    %link{ :href => "css/blueprintowe/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
+  %body
+    .container.showgrid
+      .box
+        Jakiś dziwny tytuł przykładowej strony
+        .append-1
+          %a{ :href => "http://sigma.ug.edu.pl/~msmolins/rails3/" }
+            main
+      .column.span-1
+        %h3
+          1st kolumna
+        .pre
+          i tu można wstawiać dowolny text lub też obrazki
+      .column.span-1
+        %h3
+          2nd kolumna
+        .pre
+          i tu można wstawiać dowolny text lub też obrazki również
+      .column.span-1
+        %h3
+          3rd kolumna
+        %fieldset
+          %form{ :action => "przyk\305\202adBlueprintowejStrony.html" }
+            %p
+              %input{ :type => "text" }
+            %p
+              %input{ :type => "button", :value => "Send" }
+</pre>
+</div>
+
+Jak widać nie ma zmory programistów, czyli nawiasów <> Nareszcie nie pokaże się błąd, że coś nie zastało domnkniętę.
+Kod hamlowski jest o około 35% krótszy niż standardowy html, a co za tym idzie zyskujemy w pewnym stopniu prędkośc wczytywania sie storny, dla przykładu plik z hamlowym kodem jest o 8% mniejszy niż odpowiednik htmlowy. Niby nic, ale to tylko jest jedna zwykła strona.
+
+<blockquote>
+<p>
+Co mają wspólnego informatyk i blondynka?
+- Oboje żyją dzięki sztucznej inteligencji.
+<p>
+</blockquote>
+
+##Sass time
+
+A więc Sass podobnie jak Haml ma na zadaniu "przekonerwtować", tym razem, arkusz stylów CSS do "ładniejszej" dla oka postaci.
+Jedno co może się niezbyt podobać to podwójna interlinia w pliku sassowym, niby minus, ale za to bardzo przejrzysty widok. I podobnie jak w hamlu nie ma nawiasów. Wynikowy kod sassowy od przykładowej bluerpintowej strony.
+<div class="highlight">
+<pre>
+html, body, div, p, a, fieldset, form
+  margin: 0
+  padding: 0
+  border: 0
+  font-weight: inherit
+  font-style: inherit
+  font-size: 100%
+  font-family: inherit
+  vertical-align: baseline
+
+
+body
+  line-height: 1.5
+
+
+html
+  font-size: 100.01%
+
+
+body
+  font-size: 75%
+  color: #222
+  background: #fff
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif
+
+
+h3
+  font-weight: normal
+  color: #111
+  font-size: 1.5em
+  line-height: 1
+  margin-bottom: 1em
+
+
+p
+  margin: 0 0 1.5em
+
+
+a
+  color: #009
+  text-decoration: underline
+
+  &:focus, &:hover
+    color: #000
+
+
+fieldset
+  padding: 1.4em
+  margin: 0 0 1.5em 0
+  border: 1px solid #ccc
+
+
+input[type=text]
+  background-color: #fff
+  border: 1px solid #bbb
+  margin: 0.5em 0
+
+  &:focus
+    border-color: #666
+
+
+.container
+  width: 1030px
+  margin: 0 auto
+
+
+.column, div.span-1
+  float: left
+  margin-right: 10px
+
+
+.span-1
+  width: 250px
+
+
+.append-1
+  padding-right: 260px
+
+
+.box
+  padding: 1.5em
+  margin-bottom: 1.5em
+  background: #E5ECF9
+
+
+.container
+  display: block
+
+  &:after
+    content: "\0020"
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+    overflow: hidden
+
+
+p + p
+  text-indent: 2em
+  margin-top: -1.5em
+
+
+form p + p
+  text-indent: 0
+</pre>
+</div>
+
+
+
+
+
+
+
+

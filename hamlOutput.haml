@@ -1,0 +1,35 @@
+﻿!!! Strict
+%html{ "xml:lang" => "pl", :lang => "pl-pl", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "content-type" }
+    %title
+      blueprint presents
+    %meta{ :name => "author", :content => "Marian" }
+    %link{ :href => "http://sigma.ug.edu.pl/~msmolins/public_html/rails3/atom.xml", :title => "Marian", :rel => "alternate", :type => "application/atom+xml" }
+    %link{ :href => "css/blueprintowe/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
+  %body
+    .container.showgrid
+      .box
+        Jakiś dziwny tytuł przykładowej strony
+        .append-1
+          %a{ :href => "http://sigma.ug.edu.pl/~msmolins/rails3/" }
+            main
+      .column.span-1
+        %h3
+          1st kolumna
+        .pre
+          i tu można wstawiać dowolny text lub też obrazki
+      .column.span-1
+        %h3
+          2nd kolumna
+        .pre
+          i tu można wstawiać dowolny text lub też obrazki również
+      .column.span-1
+        %h3
+          3rd kolumna
+        %fieldset
+          %form{ :action => "przyk\305\202adBlueprintowejStrony.html" }
+            %p
+              %input{ :type => "text" }
+            %p
+              %input{ :type => "button", :value => "Send" }
